@@ -4,35 +4,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/base/*">
-    <link rel="stylesheet" href="./assets/styles/layout/*">
-    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/scss/index.css">
     <title>OneTech</title>
 </head>
 
 <body>
     <!-- Header start -->
     <header class="header">
-        <div class="topBar">
-            <div class="topBarLeft">
-                <ul class="contactList">
-                    <li class="contactItem"><a href="tel:+38 068 005 3570">+38 068 005 3570</a></li>
-                    <li class="contactItem"><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></li>
-                </ul>
+        <div class="container">
+            <!-- Header topbar -->
+            <div class="topBar">
+                <div class="row">
+                    <div class="topBarLeft">
+                        <ul class="contactList">
+                            <li class="contactItem"><a href="tel:+38 068 005 3570">+38 068 005 3570</a></li>
+                            <li class="contactItem"><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="topBarRight">
+                        <div class="topBarMenu">
+                            <ul class="menuList">
+                                <li class="menuItem">
+                                    <select name="language" id="language">
+                                        <option value="eng">English</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="aze">Azerbaijan</option>
+                                    </select>
+                                </li>
+
+                                <li class="menuItem">
+                                    <select name="curency" id="curency">
+                                        <option value="usd">USD</option>
+                                        <option value="azn">AZN</option>
+                                        <option value="tl">TL</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topBarAuth">
+                            <ul class="authList">
+                                <li class="authItem">
+                                    <a href="./pages/register.html">Register</a>
+                                </li>
+                                <li class="authItem">
+                                    <a href="./pages/login.html">Sign in</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="topBarRight">
-                <div class="topBarMenu"></div>
-                <div class="topBarUser"></div>
+
+            <!-- Header main -->
+            <div class="headerMain">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="./index.html">OneTech</a>
+                    </div>
+
+                    <!-- Search box -->
+                    <div class="searchBox">
+                        <form class="formSearch">
+                            <input type="search" name="search" id="search" placeholder="Search for products...">
+                            <select name="categories" id="categories">
+                                <option value="All categories">All categories</option>
+                                <option value="Computers">Computers</option>
+                                <option value="Laptops">Laptops</option>
+                                <option value="Cameras">Cameras</option>
+                                <option value="Hardware">Hardware</option>
+                                <option value="Smartphones">Smartphones</option>
+                            </select>
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Shop area -->
+                    <div class="shopArea">
+                        <!-- Wishlist -->
+                        <div class="singleItem">
+                            <div class="shopIcon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="shopDetails">
+                                <h4>Wishlist</h4>
+                                <span>115</span>
+                            </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="singleItem">
+                            <div class="shopIcon">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="cartCount">10</span>
+                            </div>
+                            <div class="shopDetails">
+                                <h4>Wishlist</h4>
+                                <span>115</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headerBottom">
+                <div class="catDropdown">
+                    <div class="catTitle">
+                        <i class="fa-solid fa-bars"></i>
+                        <h2>Categories</h2>
+                    </div>
+                    <ul class="catList">
+                        <li class="catItem">
+                            <a href="#">Computers & Laptops</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Cameras & Photos</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Hardware</a>
+                            <div class="dropdown">
+                                <ul class="dropdownList">
+                                    <li class="dropdownItem">
+                                        <a href="#">
+                                            Menu Item 1
+                                        </a>
+                                        <div class="dropdown">
+                                            <ul class="dropdownList">
+                                                <li class="dropdownItem">
+                                                    <a href="#">
+                                                        Menu Item 1
+                                                    </a>
+                                                </li>
+                                                <li class="dropdownItem">
+                                                    <a href="#">
+                                                        Menu Item 1
+                                                    </a>
+                                                </li>
+                                                <li class="dropdownItem">
+                                                    <a href="#">
+                                                        Menu Item 1
+                                                    </a>
+                                                </li>
+                                                <li class="dropdownItem">
+                                                    <a href="#">
+                                                        Menu Item 1
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdownItem">
+                                        <a href="#">
+                                            Menu Item 1
+                                        </a>
+                                    </li>
+                                    <li class="dropdownItem">
+                                        <a href="#">
+                                            Menu Item 1
+                                        </a>
+                                    </li>
+                                    <li class="dropdownItem">
+                                        <a href="#">
+                                            Menu Item 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                        <li class="catItem">
+                            <a href="#">Computers</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="navBar">
+                    <ul class="navList">
+                        <li class="navItem">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#">Shop</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
     <!-- Header end -->
 
-    <main class="main"></main>
+    <main class="main">
+        <!-- Hero start -->
+        <section class="hero">
+            <div class="heroBg"></div>
+            <div class="heroContent">
+                <div class="heroDetails">
+                    <h2>new era of smartphones</h2>
+                    <p><span class="price">$530</span><span class="sale">$460</span></p>
+                    <p>Apple Iphone 6s</p>
+                    <a href="./pages/shop.html">Shop Now</a>
+                </div>
+                <div class="heroImg">
+                    <img src="./assets/img/hero/banner_product.png" alt="phone">
+                </div>
+            </div>
+        </section>
+        <!-- Hero end -->
+    </main>
 
     <!-- Footer start -->
     <footer class="footer"></footer>
     <!-- Footer end -->
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5572bb5cab.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
