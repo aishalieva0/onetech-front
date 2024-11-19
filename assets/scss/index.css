@@ -1,1 +1,352 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css");
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.header i {
+  display: flex;
+  align-items: center;
+}
+.header .topBar {
+  background-color: #fafafa;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.3764705882);
+}
+.header .topBar .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.header .topBar .row a {
+  color: #000;
+}
+.header .topBar .row .topBarLeft .contactList {
+  display: flex;
+  gap: 25px;
+}
+.header .topBar .row .topBarLeft .contactList .contactItem {
+  display: flex;
+  gap: 8px;
+}
+.header .topBar .row .topBarLeft .contactList .contactItem a {
+  transition: 0.3s ease;
+}
+.header .topBar .row .topBarLeft .contactList .contactItem a:hover {
+  color: #a3a3a3;
+}
+.header .topBar .row .topBarRight {
+  display: flex;
+  gap: 45px;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList {
+  display: flex;
+  gap: 25px;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem {
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: center;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem:hover .dropdownList {
+  opacity: 1;
+  visibility: visible;
+  top: 52px;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem .dropdownActive {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem .dropdownActive:hover {
+  color: #0e8ce4;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem .dropdownList {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: auto;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem .dropdownList .dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #fafafa;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+.header .topBar .row .topBarRight .topBarMenu .menuList .menuItem .dropdownList .dropdownItem:hover {
+  color: #0e8ce4;
+}
+.header .topBar .row .topBarRight .topBarAuth .authList {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 100%;
+}
+.header .topBar .row .topBarRight .topBarAuth .authList .authItem {
+  display: flex;
+  gap: 10px;
+}
+.header .topBar .row .topBarRight .topBarAuth .authList .authItem a {
+  transition: 0.3s ease;
+}
+.header .topBar .row .topBarRight .topBarAuth .authList .authItem a:hover {
+  color: #a3a3a3;
+}
+.header .topBar .row .topBarRight .topBarAuth .authList .authItem:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+.header .headerMain .row {
+  align-items: center;
+  height: 200px;
+  gap: 50px;
+}
+.header .headerMain .row .logo a {
+  color: #0e8ce4;
+  font-weight: 600;
+  font-size: 36px;
+}
+.header .headerMain .row .searchBox {
+  width: 75%;
+}
+.header .headerMain .row .searchBox .formSearch {
+  border: 1px solid #ddd;
+  height: 45px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.header .headerMain .row .searchBox .formSearch input {
+  border: none;
+  outline: none;
+  border-right: 1px solid #ddd;
+  width: 65%;
+  padding: 0 10px;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown {
+  width: 45%;
+  display: flex;
+  position: relative;
+  margin-left: 15px;
+  align-items: center;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown span,
+.header .headerMain .row .searchBox .formSearch .dropdown i {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown:hover .dropdownList {
+  opacity: 1;
+  visibility: visible;
+  top: 32px;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown .dropdownActive {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown .dropdownList {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: auto;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown .dropdownList .dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #fafafa;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.header .headerMain .row .searchBox .formSearch .dropdown .dropdownList .dropdownItem:hover {
+  color: #0e8ce4;
+}
+.header .headerMain .row .searchBox .formSearch button {
+  cursor: pointer;
+  height: 100%;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  background-color: #0e8ce4;
+  font-size: 18px;
+}
+.header .headerMain .row .shopArea {
+  display: flex;
+  gap: 30px;
+  width: 42%;
+  justify-content: flex-end;
+}
+.header .headerMain .row .shopArea .singleItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .headerMain .row .shopArea .singleItem .shopIcon {
+  position: relative;
+}
+.header .headerMain .row .shopArea .singleItem .shopIcon .cartCount {
+  background-color: #0e8ce4;
+  color: #fff;
+  font-size: 11px;
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -5px;
+  top: 12px;
+}
+.header .headerMain .row .shopArea .singleItem .shopIcon i {
+  font-size: 30px;
+}
+.header .headerMain .row .shopArea .singleItem .shopIcon .fi-ts-heart-upside-down {
+  transform: rotate(180deg);
+}
+.header .headerMain .row .shopArea .singleItem .shopDetails {
+  display: flex;
+  flex-direction: column;
+}
+.header .headerMain .row .shopArea .singleItem .shopDetails a {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.header .headerMain .row .shopArea .singleItem .shopDetails a:hover {
+  color: #0e8ce4;
+}
+.header .headerMain .row .shopArea .singleItem .shopDetails span {
+  color: #a3a3a3;
+  font-size: 14 px;
+}
+.header .headerBottom {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+.header .headerBottom .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headerBottom .row .catDropdown {
+  position: relative;
+  width: 25%;
+}
+.header .headerBottom .row .catDropdown .catTitle {
+  padding-left: 35px;
+  display: flex;
+  gap: 10px;
+  background-color: #0e8ce4;
+  height: 50px;
+  align-items: center;
+  color: #fff;
+}
+.header .headerBottom .row .catDropdown .catTitle h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+}
+.header .headerBottom .row .catDropdown .catList {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 5px 0;
+}
+.header .headerBottom .row .catDropdown .catList .catItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  padding-left: 35px;
+}
+.header .headerBottom .row .catDropdown .catList .catItem:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.header .headerBottom .row .catDropdown .catList .catItem a {
+  color: #000;
+  transition: 0.3s ease;
+}
+.header .headerBottom .row .catDropdown .catList .catItem a:hover {
+  color: #0e8ce4;
+}
+.header .headerBottom .row .catDropdown .catList .catItem:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+.header .headerBottom .row .catDropdown .catList .catItem .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  left: 100%;
+  top: 12px;
+  width: auto;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.header .headerBottom .row .catDropdown .catList .catItem .dropdown .dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+  border-bottom: 1px solid #fafafa;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.header .headerBottom .row .navBar .navList {
+  display: flex;
+  gap: 50px;
+}
+.header .headerBottom .row .navBar .navList .navItem a {
+  color: #a3a3a3;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.header .headerBottom .row .navBar .navList .navItem a:hover {
+  color: #0e8ce4;
+}/*# sourceMappingURL=index.css.map */
